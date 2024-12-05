@@ -1,0 +1,30 @@
+/*--------------Footer---------------*/
+
+.footer {
+    margin-top: 100px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #004d80; /* Match the navigation bar color */
+    color: #ffffff; /* Optional: Change text color to white for contrast */
+    bottom: 200px;
+}
+
+.icons .fa {
+    color: #a275f7;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart-o {
+    color: #f44336;
+}
+
+@media (max-width: 630px) {
+    .footer {
+        font-size: 12px;
+        margin-top: 30px;
+    }
+}

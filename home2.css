@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Hero Section */
+.hero {
+    background: url('/back.png') center/cover no-repeat;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    border-color: #3498db;
+}
+
+/* Team Section Styling */
+.team-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.team-member {
+    text-align: center;
+    flex: 1;
+    max-width: 200px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member img:hover {
+    transform: scale(1.1);
+    border-color: #e67e22;
+}
+
+.team-member p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+.footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .icons a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.footer .icons a:hover {
+    color: #3498db;
+}

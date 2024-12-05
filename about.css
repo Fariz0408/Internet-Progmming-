@@ -1,0 +1,194 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Darker text for better readability */
+    background-color: #eaf6ff; /* Light blue background for the page */
+}
+
+h2 {
+    color: #fff; /* White headers for contrast */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem; /* Increased font size */
+    text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+p {
+    text-align: center;
+    margin: 10px 0;
+    color: #fff; /* White text for paragraph */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('b2.png'); /* Add the path to your image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    padding: 80px 20px; /* Increased padding for better spacing */
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+}
+
+.hero h1 {
+    font-size: 4rem; /* Increased font size */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.hero p {
+    font-size: 1.5rem; /* Increased font size */
+}
+
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #3498db; /* Blue border around the images */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Added border color transition */
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    border-color: #2980b9; /* Darker blue border on hover */
+}
+
+/* Current Program Section */
+.current-program {
+    background-color: #2980b9; /* Darker blue for current program section */
+    padding: 30px; /* Increased padding */
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.current-program h2,
+.current-program p {
+    color: #fff; /* White text for program section */
+}
+
+/* Upcoming Info Section */
+.upcoming-info {
+    background-color: #1abc9c; /* Light blue-green for upcoming events */
+    padding: 30px; /* Increased padding */
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.upcoming-info h2,
+.upcoming-info p {
+    color: #fff;
+}
+
+/* Past Events Gallery */
+.past-events {
+    background-color: #3498db; /* Same vibrant blue for past events */
+    padding: 30px; /* Increased padding */
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.past-events h2,
+.past-events p {
+    color: #fff;
+}
+
+.past-events .gallery {
+    margin-top: 10px;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    background-color: #2980b9; /* Dark blue for mission and vision section */
+    padding: 30px; /* Increased padding */
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.mission-vision h2 {
+    color: #fff;
+}
+
+.mission-vision p {
+    color: #f5f5f5; /* Light gray text for readability */
+}
+
+/*
+/* Meet Our Team Section */
+.team {
+    background-color: #34495e; /* Deep blue-gray for team section */
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.team h2 {
+    color: #ecf0f1; /* Light text for headers */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.team-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 200px;
+    background-color: #2c3e50; /* Slightly darker background for contrast */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Add smooth hover effects */
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 10px;
+    border: 3px solid #1abc9c; /* Aqua border around profile pictures */
+}
+
+.team-member p {
+    color: #ecf0f1;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.team-member:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    background-color: #1abc9c; /* Aqua hover effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced hover shadow */
+}
+
+.team-member:hover p {
+    color: #2c3e50; /* Dark text for better readability on hover */
+}

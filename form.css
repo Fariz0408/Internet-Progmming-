@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('back.png') no-repeat center center fixed; /* Replace with your image path */
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    z-index: -1;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#successMessage {
+    text-align: center;
+    margin-top: 20px;
+}
+.doctor-selection {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.doctor-card {
+    display: block;
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.doctor-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.doctor-card h3 {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+.doctor-card p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.doctor-card input {
+    display: none;
+}
+
+.doctor-card:hover,
+.doctor-card input:checked + img {
+    border: 2px solid #007BFF;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    transform: scale(1.05);
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Klinik Nova</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="navi-bar.css">
+    <link rel="stylesheet" href="home2.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="toggle">
+            <label for="toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li><a href="klinikhome.html" class="navigation__link">Home</a></li>
+                    <li><a href="bookingform.html" class="navigation__link">Book an Appointment</a></li>
+                    <li><a href="about.html" class="navigation__link">About Us</a></li>
+                    <li><a href="file:///C:/Users/Faris/OneDrive/Desktop/SEM%205/INTRODUCTION%20TO%20INTERNET%20PROGRAMMING/KLINIK%20NOVA%20PAGE/contact-us.html" class="navigation__link">Contact Us</a></li>
+                    <li><a href="login.html" class="navigation__link">Logout</a></li>
+					<li><a href="adminlogin.html" class="navigation__link">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="logo-section">
+            <img id="logo" src="logo.png" alt="Klinik Nova Logo">
+        </section>
+    </header>
+
+    <main>
+        <!-- About Klinik Nova -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>About Klinik Nova</h1>
+                <p>Committed to providing exceptional healthcare to our community.</p>
+            </div>
+        </section>
+
+        <!-- Our Mission & Vision -->
+        <section class="mission-vision">
+            <h2>Our Mission</h2>
+            <p>To provide high-quality, compassionate, and accessible healthcare services to everyone in our community.</p>
+            <h2>Our Vision</h2>
+            <p>To be a leading healthcare provider known for innovation, excellence, and integrity.</p>
+        </section>
+
+        <!-- Meet Our Team -->
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-gallery">
+                <div class="team-member">
+                    <img src="doctor1.png" alt="Dr. REDZA">
+                    <p>Dr. REDZA - General Practitioner</p>
+                </div>
+                <div class="team-member">
+                    <img src="doctor2.png" alt="Dr. Anitha">
+                    <p>Dato Dr. Anitha Haniffa - Cardiologist</p>
+                </div>
+                <div class="team-member">
+                    <img src="doctor3.png" alt="Dr. Kiruba">
+                    <p>Dr. Kiruba - Pediatrician</p>
+                </div>
+                <div class="team-member">
+                    <img src="doctor4.png" alt="Dr. Angel">
+                    <p>Dr. Angel - Dermatologist</p>
+                </div>
+            </div>
+        </section>
+
+      <!-- Past Events Gallery -->
+<section class="past-events">
+    <h2>Past Events</h2>
+    <div class="gallery">
+        <div class="event-item">
+            <img src="event1.png" alt="Event 1">
+            <p>Blood Donation</p>
+        </div>
+        <div class="event-item">
+            <img src="event2.png" alt="Event 2">
+            <p>Colouring Contest</p>
+        </div>
+        <div class="event-item">
+            <img src="event3.png" alt="Event 3">
+            <p>Cancer Talk</p>
+        </div>
+    </div>
+</section>
+
+        </section>
+
+        <!-- Current Program -->
+        <section class="current-program">
+            <h2>Current Program</h2>
+            <p>Join our free health screening event this month! Limited slots available.</p>
+        </section>
+
+        <!-- Upcoming Info -->
+        <section class="upcoming-info">
+            <h2>Upcoming Events</h2>
+            <p>Health and Wellness Fair - December 15th. Mark your calendar!</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/klinik-nova" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/kliniknova/" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/kliniknova/" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/kliniknova" aria-label="YouTube"><i class="fa fa-youtube-play"></i></a>
+        </div>
+        <h6>© <span id="currentYear"></span> Klinik Nova</h6>
+        <h6>All Rights Reserved</h6>
+    </footer>
+
+    <script>
+        // Dynamically update footer year
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Klinik Nova</title>
+    <link rel="stylesheet" href="admin.css">
+	<link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="navi-bar.css">
+    <link rel="stylesheet" href="home2.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <!-- Navigation Bar -->
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="toggle">
+        <label for="toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li><a href="klinikhome.html" class="navigation__link">Home</a></li>
+                <li><a href="adminlogin.html" class="navigation__link">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Logo Section -->
+    <section class="logo-section">
+        <img id="logo" src="logo.png" alt="Klinik Nova Logo">
+</header>
+
+
+    <section class="admin-section">
+        <h2>Received Appointments</h2>
+         <!-- Embed Google Form using iframe -->
+        <iframe 
+            src="https://docs.google.com/spreadsheets/d/11anhbDCFygfkm17sbxOEf7mkXCpSk8GfrfJj30a0yBg/edit?resourcekey=&gid=660498371#gid=660498371"
+            frameborder="0"
+            allowfullscreen>
+            Loading…
+        </iframe>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Klinik Nova. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

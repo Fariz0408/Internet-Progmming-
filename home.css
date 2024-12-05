@@ -1,0 +1,149 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Open Sans, sans-serif;
+    line-height: 1.6;
+    color: #000; /* Changed to black */
+    background-color: #f5f5f5;
+    position: relative; /* Added to allow positioning of child elements */
+}
+
+/* Background Image */
+.background-image {
+    position: fixed; /* Fixed to cover the viewport */
+    top: 2;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('back.png'); /* Path to your background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: Bottom; /* Center the image */
+    z-index: -1; /* Send it to the back */
+}
+
+header {
+    background-color: #004d80;
+    padding: 0.5em;
+}
+
+.logo-section {
+    display: flex;
+}
+
+.logo-section #logo {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+}
+
+.logo-section p {
+    color: #000; /* Changed to black */
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    margin-top: 200px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #000; /* Changed to black */
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #555; /* Slightly darker shade for hover */
+}
+
+.btn-order-online {
+    border-radius: 20px;
+    border-style: solid;
+    background-color: #0077b699;
+    color: #000; /* Changed to black */
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Caveat', cursive;
+    cursor: pointer;
+}
+
+.btn-order-online:hover {
+    background-color: #005f66;
+    color: #fff; /* White text for hover contrast */
+}
+
+.hero-text {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    display: inline-block; /* Wraps tightly around the content */
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #000; /* Change to black */
+    font-family: 'Caveat', cursive;
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #000; /* Change to black */
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 20px; /* Space between paragraph and button */
+}
+
+
+.hero-text .btn-order-online {
+    margin-top: 20px; /* Space above the button */
+    border-radius: 20px;
+    border-style: solid;
+    background-color: #0077b699;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Caveat', cursive;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline for link styling */
+    display: inline-block;
+    text-align: center;
+}
+
+.hero-text .btn-order-online:hover {
+    background-color: #005f66;
+    color: #fff; /* White text for hover */
+}
+
+
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.gallery img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}

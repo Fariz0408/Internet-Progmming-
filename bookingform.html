@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Klinik Nova</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="navi-bar.css">
+    <link rel="stylesheet" href="home2.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Additional styling for the appointment slip */
+#appointmentSlip {
+    padding: 20px;
+    border: 2px solid #ddd;
+    width: 80%;
+    margin: 30px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#appointmentSlip h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#appointmentSlip .slip-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#appointmentSlip .slip-content div {
+    width: 45%;
+}
+
+#appointmentSlip .slip-content div p {
+    margin: 5px 0;
+}
+
+#appointmentSlip .logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#appointmentSlip .logo-container img {
+    width: 150px;  /* Adjust logo size as necessary */
+    margin-bottom: 20px;
+}
+
+#appointmentSlip .barcode-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#appointmentSlip img {
+    width: 200px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="toggle">
+            <label for="toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li><a href="klinikhome.html" class="navigation__link">Home</a></li>
+                    <li><a href="booking.html" class="navigation__link">Book an Appointment</a></li>
+                    <li><a href="aboutus.html" class="navigation__link">About Us</a></li>
+                    <li><a href="contact-us.html" class="navigation__link">Contact Us</a></li>
+                    <li><a href="login.html" class="navigation__link">Logout</a></li>
+					<li><a href="adminlogin.html" class="navigation__link">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="logo-section">
+            <img id="logo" src="logo.png" alt="Klinik Nova Logo">
+        </section>
+    </header>
+
+    <main>
+    <div class="background-image"></div>
+    <section class="form-container">
+        <h1>Book an Appointment</h1>
+         <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="4f6eb2c2-ae00-4b71-872c-6212ba25cb4c">
+
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <!-- User Details -->
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <!-- Appointment Details -->
+            <div class="form-group">
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Select Time Slot:</label>
+                <select id="time" name="time" required>
+                    <option value="" disabled selected>Select a time</option>
+                    <option value="9:00 AM">9:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="2:00 PM">2:00 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                </select>
+            </div>
+
+            <!-- Practitioner Selection -->
+            <div class="form-group">
+                <label for="doctor">Select Practitioner:</label>
+                <div class="doctor-selection">
+                    <label class="doctor-card">
+                        <input type="radio" name="doctor" value="Dr. REDZA" required>
+                        <img src="doctor1.png" alt="Dr. REDZA">
+                        <h3>Dr. REDZA</h3>
+                        <p>General Practitioner</p>
+                    </label>
+                    <label class="doctor-card">
+                        <input type="radio" name="doctor" value="Dato Dr. Anitha Haniffa" required>
+                        <img src="doctor2.png" alt="Dato Dr. Anitha Haniffa">
+                        <h3>Dato Dr. Anitha Haniffa</h3>
+                        <p>Dermatologist</p>
+                    </label>
+                    <label class="doctor-card">
+                        <input type="radio" name="doctor" value="Dr. Kiruba" required>
+                        <img src="doctor3.png" alt="Dr. Kiruba">
+                        <h3>Dr. Kiruba</h3>
+                        <p>Cardiologist</p>
+                    </label>
+                    <label class="doctor-card">
+                        <input type="radio" name="doctor" value="Dr. Angel" required>
+                        <img src="doctor4.png" alt="Dr. Angel">
+                        <h3>Dr. Angel</h3>
+                        <p>Pediatrician</p>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Additional Notes -->
+            <div class="form-group">
+                <label for="notes">Additional Notes:</label>
+                <textarea id="notes" name="message" rows="4" required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+
+            <div id="appointmentSlip" style="display: none; margin-top: 30px;">
+    <div class="logo-container">
+        <!-- Ensure the logo source path is correct -->
+        <img id="Logo" src="logo.png" alt="Klinik Nova Logo">
+    </div>
+    <h2>Your Appointment Slip</h2>
+    <div class="slip-content">
+        <div>
+            <p><strong>Full Name:</strong> <span id="slipName"></span></p>
+            <p><strong>Email:</strong> <span id="slipEmail"></span></p>
+            <p><strong>Phone:</strong> <span id="slipPhone"></span></p>
+        </div>
+        <div>
+            <p><strong>Date:</strong> <span id="slipDate"></span></p>
+            <p><strong>Time:</strong> <span id="slipTime"></span></p>
+            <p><strong>Doctor:</strong> <span id="slipDoctor"></span></p>
+        </div>
+    </div>
+    <p><strong>Additional Notes:</strong> <span id="slipNotes"></span></p>
+
+    <button id="downloadBtn" class="btn-submit">Download Appointment Slip</button>
+</div>
+
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/klinik-nova" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/kliniknova/" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/kliniknova/" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/kliniknova" aria-label="YouTube"><i class="fa fa-youtube-play"></i></a>
+        </div>
+        <p>© <span id="currentYear"></span> Klinik Nova. All Rights Reserved.</p>
+    </footer>
+
+    <script src="form.js"></script>
+    <script src="server.js"></script>
+
+    <script>
+        document.getElementById("appointmentForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // Validate fields
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const date = document.getElementById("date").value.trim();
+    const time = document.getElementById("time").value.trim();
+    const doctor = document.querySelector('input[name="doctor"]:checked');
+    const notes = document.getElementById("notes").value.trim();
+
+    if (!name || !email || !phone || !date || !time || !doctor) {
+        alert("Please fill out all required fields.");
+        return;
+    }
+
+    // Populate appointment slip
+    document.getElementById("slipName").textContent = name;
+    document.getElementById("slipEmail").textContent = email;
+    document.getElementById("slipPhone").textContent = phone;
+    document.getElementById("slipDate").textContent = date;
+    document.getElementById("slipTime").textContent = time;
+    document.getElementById("slipDoctor").textContent = doctor.value;
+    document.getElementById("slipNotes").textContent = notes;
+
+    // Show appointment slip
+    document.getElementById("appointmentSlip").style.display = "block";
+
+    // Send data to server
+    const formData = new FormData(event.target);
+    fetch("appointment-handler.php", {
+        method: "POST",
+        body: formData,
+    })
+        .then((response) => response.text())
+        .then((data) => {
+            console.log(data);
+            alert("Appointment booked successfully.");
+        })
+        .catch((error) => {
+            console.error(error);
+            alert("Appointment booked successfully.");
+        });
+		document.getElementById("downloadBtn").addEventListener("click", function() {
+    const slipContent = document.getElementById("appointmentSlip").outerHTML;
+    const blob = new Blob([slipContent], { type: "text/html" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "appointment-slip.html";
+    link.click();
+});
+
+});
+
+    </script>
+
+</body>
+</html>

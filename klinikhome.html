@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Klinik Nova</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="navi-bar.css">
+    <link rel="stylesheet" href="home2.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="toggle">
+            <label for="toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li><a href="bookingform.html" class="navigation__link">Book an Appointment</a></li>
+                    <li><a href="aboutus.html" class="navigation__link">About Us</a></li>
+                    <li><a href="file:///C:/Users/Faris/OneDrive/Desktop/SEM%205/INTRODUCTION%20TO%20INTERNET%20PROGRAMMING/KLINIK%20NOVA%20PAGE/contact-us.html" class="navigation__link">Contact Us</a></li>
+					<li><a href="login.html" class="navigation__link">Logout</a></li>
+					<li><a href="adminlogin.html" class="navigation__link">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="logo-section">
+            <img id="logo" src="logo.png" alt="Klinik Nova Logo">
+        </section>
+    </header>
+
+    <main>
+        <!-- Fullscreen Background Image -->
+        <div class="background-image">
+           
+        </div>
+
+       <section class="hero">
+    <div class="hero-text">
+        <h1>Welcome to Klinik Nova</h1>
+        <p>Your trusted partner in healthcare</p>
+        <!-- Button for booking appointment -->
+        <a href="bookingform.html" class="btn-order-online">
+            <b><i>Book an Appointment</i></b>
+        </a>
+    </div>
+</section>
+
+
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/klinik-nova" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/kliniknova/" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/kliniknova/" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/kliniknova" aria-label="YouTube"><i class="fa fa-youtube-play"></i></a>
+        </div>
+        <p>© <span id="currentYear"></span> Klinik Nova. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Dynamically update footer year
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

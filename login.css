@@ -1,0 +1,109 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background2.png') no-repeat center center/cover; /* Background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Authentication Form Container */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Form Box Styling */
+.form-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Logo Section */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px; /* Adjusted size */
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for the logo */
+}
+
+/* Header Text */
+h2 {
+    font-size: 2rem; /* Slightly larger font size */
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-family: 'Caveat', cursive; /* Retaining the cursive style */
+}
+
+/* Form Fields */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded inputs */
+    margin-top: 5px;
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: 'Caveat', cursive;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #2980b9; /* Darker blue */
+}
+
+/* Additional Links */
+p {
+    font-size: 1rem;
+    margin-top: 15px;
+    font-family: 'Caveat', cursive;
+}
+
+p a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    color: #2980b9;
+}

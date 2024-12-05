@@ -1,0 +1,115 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Header */
+.admin-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.admin-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.admin-header nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.admin-header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section */
+.admin-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.admin-section h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Table */
+.table-container {
+    overflow-x: auto;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Buttons */
+.btn-approve {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-approve:hover {
+    background-color: #218838;
+}
+
+.btn-decline {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-decline:hover {
+    background-color: #c82333;
+}
+
+/* Footer */
+.footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+ iframe {
+            width: 100%;
+            height: 700px;
+            border: none;
+        }
